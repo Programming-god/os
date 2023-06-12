@@ -1,0 +1,43 @@
+Enter the number of rows: 
+3
+Enter the number of columns: 3
+Enter matrix A:
+Enter element at position (0, 0): 1
+Enter element at position (0, 1): 2
+Enter element at position (0, 2): 3
+Enter element at position (1, 0): 4
+Enter element at position (1, 1): 5
+Enter element at position (1, 2): 6
+Enter element at position (2, 0): 7
+Enter element at position (2, 1): 8
+Enter element at position (2, 2): 9
+Enter matrix B:
+Enter element at position (0, 0): 9
+Enter element at position (0, 1): 8
+Enter element at position (0, 2): 7
+Enter element at position (1, 0): 6
+Enter element at position (1, 1): 5
+Enter element at position (1, 2): 4
+Enter element at position (2, 0): 3
+Enter element at position (2, 1): 2
+Enter element at position (2, 2): 1
+Result of matrix addition (A + B):
+10 10 10
+10 10 10
+10 10 10
+Result of matrix substraction (A - B):
+-8 -6 -4
+-2 0 2
+4 6 8
+result of multiplication of matrix a * b is:
+30 24 18
+84 69 54
+138 114 90
+transpose of matrix a:
+1 4 7
+2 5 8
+3 6 9
+transpose of matrix b
+9 6 3
+8 5 2
+7 4 1
