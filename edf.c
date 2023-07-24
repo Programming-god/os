@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 // Structure to represent a process
 typedef struct {
