@@ -1,45 +1,42 @@
-#include<stdio.h>
+#include <stdio.h>
 static int mark[20];
 int i, j, np, nr;
 
-
 int main()
 {
-int alloc[10][10],request[10][10],avail[10],r[10],w[10];
+    int alloc[10][10], request[10][10], avail[10], r[10], w[10];
 
+    printf("Enter the number of processes: ");
+    scanf("%d", &np);
 
-printf ("\nEnter the no of the process: ");
-scanf("%d",&np);
-printf ("\nEnter the no of resources: ");
-scanf("%d",&nr);
-for(i=0;i<nr; i++)
-{
-printf("\nTotal Amount of the Resource R % d: ",i+1);
-scanf("%d", &r[i]);
-}
-printf("\nEnter the request matrix:");
+    printf("Enter the number of resources: ");
+    scanf("%d", &nr);
 
+    for (i = 0; i < nr; i++)
+    {
+        printf("Total Amount of Resource R%d: ", i + 1);
+        scanf("%d", &r[i]);
+    }
 
-for(i=0;i<np;i++)
-for(j=0;j<nr;j++)
-scanf("%d",&request[i][j]);
+    printf("\nEnter the request matrix:\n");
+    for (i = 0; i < np; i++)
+    {
+        for (j = 0; j < nr; j++)
+        {
+            printf("Request P%d for R%d: ", i + 1, j + 1);
+            scanf("%d", &request[i][j]);
+        }
+    }
 
-
-printf("\nEnter the allocation matrix:");
-for(i=0;i<np;i++)
-for(j=0;j<nr;j++)
-scanf("%d",&alloc[i][j]);
-/*Available Resource calculation*/
-for(j=0;j<nr;j++)
-{
-avail[j]=r[j];
-for(i=0;i<np;i++)
-{
-avail[j]-=alloc[i][j];
-
-
-}
-}
+    printf("\nEnter the allocation matrix:\n");
+    for (i = 0; i < np; i++)
+    {
+        for (j = 0; j < nr; j++)
+        {
+            printf("Allocation P%d for R%d: ", i + 1, j + 1);
+            scanf("%d", &alloc[i][j]);
+        }
+    }
 
 
 //marking processes with zero allocation
